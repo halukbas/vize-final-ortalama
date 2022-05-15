@@ -1,0 +1,33 @@
+﻿<Window x:Class="VizeFinalOrtalama.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VizeFinalOrtalama"
+        mc:Ignorable="d"
+        Title="Vize Final Ortalama" Height="200" Width="450" ResizeMode="CanMinimize">
+
+    <Grid Background="#FDF6EC">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label FontSize="18" Margin="10,0,0,0" VerticalAlignment="Center" Padding="0,5,5,5">Vize</Label>
+        <Label Grid.Row="1" FontSize="18" Margin="10,0,0,0" VerticalAlignment="Center" Padding="0,5,5,5">Final</Label>
+
+        <TextBox x:Name="text1" Grid.Column="1" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Center" Background="#B7CADB" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left"></TextBox>
+        <TextBox x:Name="text2" Grid.Column="1" Grid.Row="1" FontSize="20" VerticalAlignment="Center" Background="#B7CADB"></TextBox>
+        <Label x:Name="sonuc" Grid.Column="2" Grid.Row="1"  FontSize="18" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Margin="10,0,10,10" Background="#F3E9DD" FontWeight="Bold"></Label>
+        <Label Grid.Column="2" FontSize="18" Margin="10,10,10,0" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Center" Background="#F3E9DD">Ortalama</Label>
+
+
+        <Button x:Name="buton" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" Margin="10,0,10,10" Background="#B7CADB" Click="buton_Click">Hesapla</Button>
+    </Grid>
+</Window>
